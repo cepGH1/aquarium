@@ -7,15 +7,15 @@ const Nav = () =>{
  
    <h2>The Aquarium Nav Page</h2>
    <Link to="/about">
-         About 
+         <b>About </b> 
     </Link>
     :::
     <Link to="/">
-         Home :
+         <b>Home </b>
     </Link>
     :::
     <Link to="/fish">
-         Fish search form 
+         <b>Fish Search Form </b>
     </Link>
  
  
