@@ -10,6 +10,8 @@ const Bar = () =>{
 
     const[loaded, setLoaded] = useState(false);
 
+    const[name, setName] = useState("");
+
 
     useEffect(() => {
         axios.get("https://api.punkapi.com/v2/beers").then(
@@ -22,12 +24,19 @@ const Bar = () =>{
         setLoaded(true);
     }, []);
 
+    const postData = () => {
+        axios.post("https://reqres.in/api/users?page=2", {name:"clare", job: "junior"}).then(
+            (response) => {console.log(response);}
+        )
+    }
+
 if(loaded){
     return(
  
  <div className="aquarium">
  
    <h2>The Aquarium Bar</h2>
+   <button type="button" onClick={postData}>post</button>
    {
        beerList.map((beer) => {
             return <Beer data={beer}/>

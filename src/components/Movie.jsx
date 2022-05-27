@@ -1,15 +1,7 @@
-import axios from "axios";
-
-const Beer = ({data}) =>{
+const Movie = ({data}) =>{
     const{name, abv, image_url, food_pairing} = data;
 
-const deleteObj = () => {
-    axios.delete("https://reqres.in/api/users/2").then(
-    (response) => {
-        console.log(response);
-    }
-    )
-}
+
 
     return(
  <div className="aquarium">
@@ -26,10 +18,10 @@ const deleteObj = () => {
             } 
             </ol>
    
-            <button type="button" onClick={deleteObj}>delete test</button>
+ 
  
 </div>
     );
 };
 
-export default Beer;
+export default Movie;
