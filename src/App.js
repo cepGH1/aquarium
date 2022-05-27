@@ -6,7 +6,8 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Nav from './components/Nav';
 import Aboutus from './components/Aboutus';
-import Form from './components/Form';
+import Form from './components/Form.jsx';
+import Bar from './components/Bar';
 import {
   BrowserRouter,
   Routes,
@@ -24,6 +25,7 @@ function App() {
    <Route path="/about" element={<Aboutus/>}/>
    <Route path="/" element={<Home/>}/>
    <Route path="/fish" element={<Form/>}/>
+   <Route path="/bar" element={<Bar />}/>
    </Routes>
    
    <Footer/>

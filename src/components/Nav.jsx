@@ -17,6 +17,10 @@ const Nav = () =>{
     <Link to="/fish">
          <b>Fish Search Form </b>
     </Link>
+    :::
+    <Link to="/bar">
+         <b>The aquarium bar </b>
+    </Link>
  
  
 </div>
